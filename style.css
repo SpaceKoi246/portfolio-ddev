@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+	--primary-font: 'Rubik', sans-serif;
+	--headers-font: 'Ubuntu', sans-serif;
+	--dark-color: #16161a;
+	--white-color: #fffffe;
+	--purple-color: #7f5af0;
+	--green-color: #2cb67d;
+	--text-color: #94a1b2;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	color: var(--white-color);
+	font-family: var(--primary-font);
+}
+
+body {
+	background-color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--headers-font);
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+p {
+	color: --;
+	font-weight: lighter;
+	font-size: 14px;
+	line-height: 19px;
+	letter-spacing: 0.02em;
+	color: var(--text-color);
+}
+
+button {
+	border: 1px solid var(--purple-color);
+	background-color: transparent;
+	color: var(--purple-color);
+	font-weight: lighter;
+	border-radius: 3px;
+	padding: 5px 25px;
+}
+
+button:hover {
+	background-color: var(--purple-color);
+	color: var(--white-color);
+	transition: 0.25s;
+}
+
+.header {
+	box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: center;
+}
+
+.header nav {
+	max-width: 1350px;
+	min-width: 800px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 70px;
+	height: 70px;
+	width: 100%;
+}
+
+.header nav ul {
+	display: flex;
+	gap: 40px;
+}
+
+.header nav ul a {
+	font-weight: lighter;
+}
+
+.header nav ul a:hover {
+	color: var(--green-color);
+	transition: 0.25s;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main .hero img {
+	width: 400px;
+}
+
+.main .hero,
+.main .about_me {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 500px;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	max-width: 1100px;
+	min-width: 800px;
+}
+
+.main .hero span,
+.main .hero h3 {
+	color: var(--purple-color);
+}
+
+.about_me {
+	background-color: var(--purple-color);
+	border-radius: 30px;
+}
+
+.about_me img {
+	border: 6px solid var(--white-color);
+	border-radius: 50%;
+	width: 300px;
+}
+
+.about_me h2 {
+	margin-bottom: 30px;
+}
+
+.about_me p {
+	width: 350px;
+	color: var(--white-color);
+}
+.main .about_me span {
+	color: var(--green-color);
+}
